@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.metrics" href="metrics.html" /><link rel="prev" title="kornia.io" href="io.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/losses.html" />
 
@@ -322,7 +322,7 @@
 </div>
 <p>See <code class="xref py py-meth docutils literal notranslate"><span class="pre">ssim()</span></code> for details about SSIM.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>img1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the first input image with shape <span class="math notranslate nohighlight">\((B, C, H, W)\)</span>.</p></li>
 <li><p><strong>img2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the second input image with shape <span class="math notranslate nohighlight">\((B, C, H, W)\)</span>.</p></li>
@@ -341,10 +341,10 @@ area to compute SSIM to match the MATLAB implementation of original SSIM paper.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'same'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The loss based on the ssim index.</p>
 </dd>
 </dl>
@@ -367,7 +367,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'sam
 </div>
 <p>See <code class="xref py py-meth docutils literal notranslate"><span class="pre">ssim()</span></code> for details about SSIM.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>img1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the first input image with shape <span class="math notranslate nohighlight">\((B, C, D, H, W)\)</span>.</p></li>
 <li><p><strong>img2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the second input image with shape <span class="math notranslate nohighlight">\((B, C, D, H, W)\)</span>.</p></li>
@@ -386,10 +386,10 @@ area to compute SSIM to match the MATLAB implementation of original SSIM paper.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'same'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The loss based on the ssim index.</p>
 </dd>
 </dl>
@@ -414,17 +414,17 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'sam
 </div></blockquote>
 <p>See <code class="xref py py-meth docutils literal notranslate"><span class="pre">psnr()</span></code> for details abut PSNR.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the input image with shape <span class="math notranslate nohighlight">\((*)\)</span>.</p></li>
 <li><p><strong>labels</strong> – the labels image with shape <span class="math notranslate nohighlight">\((*)\)</span>.</p></li>
 <li><p><strong>max_val</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – The maximum value in the input tensor.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed loss as a scalar.</p>
 </dd>
 </dl>
@@ -441,7 +441,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'sam
 <span class="sig-prename descclassname"><span class="pre">kornia.losses.</span></span><span class="sig-name descname"><span class="pre">total_variation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sum'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/losses/total_variation.html#total_variation"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.losses.total_variation" title="Permalink to this definition">#</a></dt>
 <dd><p>Function that computes Total Variation according to [1].</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>img</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the input image with shape <span class="math notranslate nohighlight">\((*, H, W)\)</span>.</p></li>
 <li><p><strong>reduction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – Specifies the reduction to apply to the output: <code class="docutils literal notranslate"><span class="pre">'mean'</span></code> | <code class="docutils literal notranslate"><span class="pre">'sum'</span></code>.
@@ -450,10 +450,10 @@ in the output, <code class="docutils literal notranslate"><span class="pre">'sum
 Default:  <code class="code docutils literal notranslate"><span class="pre">'sum'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a tensor with shape <span class="math notranslate nohighlight">\((*,)\)</span>.</p>
 </dd>
 </dl>
@@ -487,16 +487,16 @@ Thus, <cite>reduction=’mean’</cite> was added as an optional reduction metho
 \partial_y d_{ij} \right | e^{-\left \| \partial_y I_{ij} \right \|}\]</div>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>idepth</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor with the inverse depth with shape <span class="math notranslate nohighlight">\((N, 1, H, W)\)</span>.</p></li>
 <li><p><strong>image</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor with the input image with shape <span class="math notranslate nohighlight">\((N, 3, H, W)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a scalar with the computed loss.</p>
 </dd>
 </dl>
@@ -533,7 +533,7 @@ a slightly different implementation (see [4]).</p>
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>img1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the predicted tensor with shape <span class="math notranslate nohighlight">\((*)\)</span>.</p></li>
 <li><p><strong>img2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the target tensor with the same shape as img1.</p></li>
@@ -545,10 +545,10 @@ summed.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'none'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a scalar with the computed loss.</p>
 </dd>
 </dl>
@@ -582,7 +582,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'non
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>img1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the predicted tensor with shape <span class="math notranslate nohighlight">\((*)\)</span>.</p></li>
 <li><p><strong>img2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the target tensor with the same shape as img1.</p></li>
@@ -594,10 +594,10 @@ summed.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'none'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a scalar with the computed loss.</p>
 </dd>
 </dl>
@@ -630,7 +630,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'non
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>img1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the predicted tensor with shape <span class="math notranslate nohighlight">\((*)\)</span>.</p></li>
 <li><p><strong>img2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the target tensor with the same shape as img1.</p></li>
@@ -642,10 +642,10 @@ summed.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'none'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a scalar with the computed loss.</p>
 </dd>
 </dl>
@@ -678,7 +678,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'non
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>img1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the predicted tensor with shape <span class="math notranslate nohighlight">\((*)\)</span>.</p></li>
 <li><p><strong>img2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the target tensor with the same shape as img1.</p></li>
@@ -690,10 +690,10 @@ summed.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'none'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a scalar with the computed loss.</p>
 </dd>
 </dl>
@@ -717,7 +717,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'non
 </div>
 <p>See <a class="reference internal" href="#kornia.losses.ssim_loss" title="kornia.losses.ssim_loss"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ssim_loss()</span></code></a> for details about SSIM.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>window_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the size of the gaussian kernel to smooth the images.</p></li>
 <li><p><strong>max_val</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <em>optional</em>) – the dynamic range of the images.
@@ -734,7 +734,7 @@ area to compute SSIM to match the MATLAB implementation of original SSIM paper.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'same'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The loss based on the ssim index.</p>
 </dd>
 </dl>
@@ -758,7 +758,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'sam
 </div>
 <p>See <a class="reference internal" href="#kornia.losses.ssim_loss" title="kornia.losses.ssim_loss"><code class="xref py py-meth docutils literal notranslate"><span class="pre">ssim_loss()</span></code></a> for details about SSIM.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>window_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – the size of the gaussian kernel to smooth the images.</p></li>
 <li><p><strong>max_val</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <em>optional</em>) – the dynamic range of the images.
@@ -775,7 +775,7 @@ area to compute SSIM to match the MATLAB implementation of original SSIM paper.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'same'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The loss based on the ssim index.</p>
 </dd>
 </dl>
@@ -810,7 +810,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'sam
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>sigmas</strong> (<em>optional</em>) – gaussian sigma values.
 Default:  <code class="code docutils literal notranslate"><span class="pre">[0.5,</span> <span class="pre">1.0,</span> <span class="pre">2.0,</span> <span class="pre">4.0,</span> <span class="pre">8.0]</span></code></p></li>
@@ -829,7 +829,7 @@ in the output, <code class="docutils literal notranslate"><span class="pre">'sum
 Default:  <code class="code docutils literal notranslate"><span class="pre">'mean'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>The computed loss.</p>
 </dd>
 </dl>
@@ -889,7 +889,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'mea
 </div></blockquote>
 <p>See <code class="xref py py-meth docutils literal notranslate"><span class="pre">psnr()</span></code> for details abut PSNR.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>max_val</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – The maximum value in the input tensor.</p>
 </dd>
 </dl>
@@ -962,7 +962,7 @@ a slightly different implementation (see [4]).</p>
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>reduction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – Specifies the reduction to apply to the
 output: <code class="docutils literal notranslate"><span class="pre">'none'</span></code> | <code class="docutils literal notranslate"><span class="pre">'mean'</span></code> | <code class="docutils literal notranslate"><span class="pre">'sum'</span></code>. <code class="docutils literal notranslate"><span class="pre">'none'</span></code>: no reduction
 will be applied (default), <code class="docutils literal notranslate"><span class="pre">'mean'</span></code>: the sum of the output will be divided
@@ -1009,7 +1009,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'non
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>reduction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – Specifies the reduction to apply to the
 output: <code class="docutils literal notranslate"><span class="pre">'none'</span></code> | <code class="docutils literal notranslate"><span class="pre">'mean'</span></code> | <code class="docutils literal notranslate"><span class="pre">'sum'</span></code>. <code class="docutils literal notranslate"><span class="pre">'none'</span></code>: no reduction
 will be applied (default), <code class="docutils literal notranslate"><span class="pre">'mean'</span></code>: the sum of the output will be divided
@@ -1055,7 +1055,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'non
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>reduction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – Specifies the reduction to apply to the
 output: <code class="docutils literal notranslate"><span class="pre">'none'</span></code> | <code class="docutils literal notranslate"><span class="pre">'mean'</span></code> | <code class="docutils literal notranslate"><span class="pre">'sum'</span></code>. <code class="docutils literal notranslate"><span class="pre">'none'</span></code>: no reduction
 will be applied (default), <code class="docutils literal notranslate"><span class="pre">'mean'</span></code>: the sum of the output will be divided
@@ -1101,7 +1101,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'non
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>reduction</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – Specifies the reduction to apply to the
 output: <code class="docutils literal notranslate"><span class="pre">'none'</span></code> | <code class="docutils literal notranslate"><span class="pre">'mean'</span></code> | <code class="docutils literal notranslate"><span class="pre">'sum'</span></code>. <code class="docutils literal notranslate"><span class="pre">'none'</span></code>: no reduction
 will be applied (default), <code class="docutils literal notranslate"><span class="pre">'mean'</span></code>: the sum of the output will be divided
@@ -1145,7 +1145,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'non
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<em>Tensor</em>) – input data tensor of arbitrary shape.</p></li>
 <li><p><strong>target</strong> (<em>Tensor</em>) – the target tensor with shape matching input.</p></li>
@@ -1167,10 +1167,10 @@ Must be a vector with length equal to the number of classes.
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>Tensor</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed loss.</p>
 </dd>
 </dl>
@@ -1200,7 +1200,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<em>Tensor</em>) – logits tensor with shape <span class="math notranslate nohighlight">\((N, C, *)\)</span> where C = number of classes.</p></li>
 <li><p><strong>target</strong> (<em>Tensor</em>) – labels tensor with shape <span class="math notranslate nohighlight">\((N, *)\)</span> where each value is <span class="math notranslate nohighlight">\(0 ≤ targets[i] ≤ C−1\)</span>.</p></li>
@@ -1217,10 +1217,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'non
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p>Tensor</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed loss.</p>
 </dd>
 </dl>
@@ -1260,7 +1260,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – logits tensor with shape <span class="math notranslate nohighlight">\((N, C, H, W)\)</span> where C = number of classes.</p></li>
 <li><p><strong>labels</strong> – labels tensor with shape <span class="math notranslate nohighlight">\((N, H, W)\)</span> where each value
@@ -1269,10 +1269,10 @@ is <span class="math notranslate nohighlight">\(0 ≤ targets[i] ≤ C−1\)</sp
 Default:  <code class="code docutils literal notranslate"><span class="pre">1e-08</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed loss.</p>
 </dd>
 </dl>
@@ -1314,7 +1314,7 @@ penalties for FPs and FNs, respectively.</p></li>
 </ul>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – logits tensor with shape <span class="math notranslate nohighlight">\((N, C, H, W)\)</span> where C = number of classes.</p></li>
 <li><p><strong>target</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – labels tensor with shape <span class="math notranslate nohighlight">\((N, H, W)\)</span> where each value
@@ -1325,10 +1325,10 @@ is <span class="math notranslate nohighlight">\(0 ≤ targets[i] ≤ C−1\)</sp
 Default:  <code class="code docutils literal notranslate"><span class="pre">1e-08</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed loss.</p>
 </dd>
 </dl>
@@ -1373,16 +1373,16 @@ use the Lovasz-Softmax loss.</p>
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>pred</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – logits tensor with shape <span class="math notranslate nohighlight">\((N, 1, H, W)\)</span>.</p></li>
 <li><p><strong>labels</strong> – labels tensor with shape <span class="math notranslate nohighlight">\((N, H, W)\)</span> with binary values.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a scalar with the computed loss.</p>
 </dd>
 </dl>
@@ -1426,17 +1426,17 @@ labels please use the Lovasz-Hinge loss.</p>
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>pred</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – logits tensor with shape <span class="math notranslate nohighlight">\((N, C, H, W)\)</span> where C = number of classes &gt; 1.</p></li>
 <li><p><strong>labels</strong> – labels tensor with shape <span class="math notranslate nohighlight">\((N, H, W)\)</span> where each value
 is <span class="math notranslate nohighlight">\(0 ≤ targets[i] ≤ C−1\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a scalar with the computed loss.</p>
 </dd>
 </dl>
@@ -1466,7 +1466,7 @@ is <span class="math notranslate nohighlight">\(0 ≤ targets[i] ≤ C−1\)</sp
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>alpha</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Weighting factor for the rare class <span class="math notranslate nohighlight">\(\alpha \in [0, 1]\)</span>.</p></li>
 <li><p><strong>gamma</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – Focusing parameter <span class="math notranslate nohighlight">\(\gamma &gt;= 0\)</span>.
@@ -1528,7 +1528,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>eps</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <em>optional</em>) – Scalar to enforce numerical stabiliy.
 Default:  <code class="code docutils literal notranslate"><span class="pre">1e-08</span></code></p>
 </dd>
@@ -1580,7 +1580,7 @@ penalties for FPs and FNs, respectively.</p></li>
 </ul>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>alpha</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – the first coefficient in the denominator.</p></li>
 <li><p><strong>beta</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – the second coefficient in the denominator.</p></li>
@@ -1624,7 +1624,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">1e-0
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>alpha</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Weighting factor <span class="math notranslate nohighlight">\(\alpha \in [0, 1]\)</span>.</p></li>
 <li><p><strong>gamma</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – Focusing parameter <span class="math notranslate nohighlight">\(\gamma &gt;= 0\)</span>.
@@ -1692,13 +1692,13 @@ use the Lovasz-Softmax loss.</p>
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>pred</strong> – logits tensor with shape <span class="math notranslate nohighlight">\((N, 1, H, W)\)</span>.</p></li>
 <li><p><strong>labels</strong> – labels tensor with shape <span class="math notranslate nohighlight">\((N, H, W)\)</span> with binary values.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>a scalar with the computed loss.</p>
 </dd>
 </dl>
@@ -1743,14 +1743,14 @@ labels please use the Lovasz-Hinge loss.</p>
 </dd>
 </dl>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>pred</strong> – logits tensor with shape <span class="math notranslate nohighlight">\((N, C, H, W)\)</span> where C = number of classes &gt; 1.</p></li>
 <li><p><strong>labels</strong> – labels tensor with shape <span class="math notranslate nohighlight">\((N, H, W)\)</span> where each value
 is <span class="math notranslate nohighlight">\(0 ≤ targets[i] ≤ C−1\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>a scalar with the computed loss.</p>
 </dd>
 </dl>
@@ -1773,7 +1773,7 @@ is <span class="math notranslate nohighlight">\(0 ≤ targets[i] ≤ C−1\)</sp
 <span class="sig-prename descclassname"><span class="pre">kornia.losses.</span></span><span class="sig-name descname"><span class="pre">js_div_loss_2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/losses/divergence.html#js_div_loss_2d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.losses.js_div_loss_2d" title="Permalink to this definition">#</a></dt>
 <dd><p>Calculate the Jensen-Shannon divergence loss between heatmaps.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the input tensor with shape <span class="math notranslate nohighlight">\((B, N, H, W)\)</span>.</p></li>
 <li><p><strong>target</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the target tensor with shape <span class="math notranslate nohighlight">\((B, N, H, W)\)</span>.</p></li>
@@ -1785,7 +1785,7 @@ summed.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'mean'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 </dl>
@@ -1803,7 +1803,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'mea
 <span class="sig-prename descclassname"><span class="pre">kornia.losses.</span></span><span class="sig-name descname"><span class="pre">kl_div_loss_2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reduction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'mean'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/losses/divergence.html#kl_div_loss_2d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.losses.kl_div_loss_2d" title="Permalink to this definition">#</a></dt>
 <dd><p>Calculate the Kullback-Leibler divergence loss between heatmaps.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the input tensor with shape <span class="math notranslate nohighlight">\((B, N, H, W)\)</span>.</p></li>
 <li><p><strong>target</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the target tensor with shape <span class="math notranslate nohighlight">\((B, N, H, W)\)</span>.</p></li>
@@ -1815,7 +1815,7 @@ summed.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'mean'</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 </dl>
@@ -1851,7 +1851,7 @@ the one-sided HD from X to Y is defined as:</p>
 a differentiable approximation of Hausdorff distance as stated in <span id="id6">[<a class="reference internal" href="community/bibliography.html#id20" title="Davood Karimi and Septimiu E Salcudean. Reducing the hausdorff distance in medical image segmentation with convolutional neural networks. IEEE Transactions on medical imaging, 39(2):499–513, 2019.">KS19</a>]</span>.
 The code is refactored on top of <a class="reference external" href="https://github.com/PatRyg99/HausdorffLoss/blob/master/hausdorff_loss.py">here</a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>alpha</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <em>optional</em>) – controls the erosion rate in each iteration.
 Default:  <code class="code docutils literal notranslate"><span class="pre">2.0</span></code></p></li>
@@ -1893,7 +1893,7 @@ the one-sided HD from X to Y is defined as:</p>
 a differentiable approximation of Hausdorff distance as stated in <span id="id7">[<a class="reference internal" href="community/bibliography.html#id20" title="Davood Karimi and Septimiu E Salcudean. Reducing the hausdorff distance in medical image segmentation with convolutional neural networks. IEEE Transactions on medical imaging, 39(2):499–513, 2019.">KS19</a>]</span>.
 The code is refactored on top of <a class="reference external" href="https://github.com/PatRyg99/HausdorffLoss/blob/master/hausdorff_loss.py">here</a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>alpha</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <em>optional</em>) – controls the erosion rate in each iteration.
 Default:  <code class="code docutils literal notranslate"><span class="pre">2.0</span></code></p></li>

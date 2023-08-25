@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.geometry.line" href="geometry.line.html" /><link rel="prev" title="kornia.geometry.liegroup" href="geometry.liegroup.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/geometry.linalg.html" />
 
@@ -322,16 +322,16 @@ reference transformation <span class="math notranslate nohighlight">\(T_1^{0} = 
 \[T_1^{2} = (T_0^{1})^{-1} \cdot T_0^{2}\]</div>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>trans_01</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – reference transformation tensor of shape <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <span class="math notranslate nohighlight">\((4, 4)\)</span>.</p></li>
 <li><p><strong>trans_02</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – destination transformation tensor of shape <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <span class="math notranslate nohighlight">\((4, 4)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the relative transformation between the transformations with shape <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <span class="math notranslate nohighlight">\((4, 4)\)</span>.</p>
 </dd>
 </dl>
@@ -355,7 +355,7 @@ reference transformation <span class="math notranslate nohighlight">\(T_1^{0} = 
 \mathbf{0} &amp; 1\end{bmatrix}\end{split}\]</div>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>trans_01</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor with the homogeneous transformation from
 a reference frame 1 respect to a frame 0. The tensor has must have a
@@ -365,10 +365,10 @@ a reference frame 2 respect to a frame 1. The tensor has must have a
 shape of <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <span class="math notranslate nohighlight">\((4, 4)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the transformation between the two frames with shape <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <span class="math notranslate nohighlight">\((4, 4)\)</span>.</p>
 </dd>
 </dl>
@@ -394,10 +394,10 @@ shape of <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <spa
 \mathbf{0} &amp; 1\end{bmatrix}\end{split}\]</div>
 </div>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>trans_12</strong> – transformation tensor of shape <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <span class="math notranslate nohighlight">\((4, 4)\)</span>.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>tensor with inverted transformations with shape <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <span class="math notranslate nohighlight">\((4, 4)\)</span>.</p>
 </dd>
 </dl>
@@ -413,17 +413,17 @@ shape of <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <spa
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.linalg.</span></span><span class="sig-name descname"><span class="pre">transform_points</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trans_01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points_1</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/linalg.html#transform_points"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.linalg.transform_points" title="Permalink to this definition">#</a></dt>
 <dd><p>Function that applies transformations to a set of points.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>trans_01</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><em>torch.Tensor</em></a>) – tensor for transformations of shape
 <span class="math notranslate nohighlight">\((B, D+1, D+1)\)</span>.</p></li>
 <li><p><strong>points_1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><em>torch.Tensor</em></a>) – tensor of points of shape <span class="math notranslate nohighlight">\((B, N, D)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>tensor of N-dimensional points.</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)">torch.Tensor</a></p>
 </dd>
 </dl>
@@ -446,7 +446,7 @@ shape of <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <spa
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.linalg.</span></span><span class="sig-name descname"><span class="pre">point_line_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-09</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/linalg.html#point_line_distance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.linalg.point_line_distance" title="Permalink to this definition">#</a></dt>
 <dd><p>Return the distance from points to lines.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>point</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (possibly homogeneous) points <span class="math notranslate nohighlight">\((*, N, 2 or 3)\)</span>.</p></li>
 <li><p><strong>line</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – lines coefficients <span class="math notranslate nohighlight">\((a, b, c)\)</span> with shape <span class="math notranslate nohighlight">\((*, N, 3)\)</span>, where <span class="math notranslate nohighlight">\(ax + by + c = 0\)</span>.</p></li>
@@ -454,10 +454,10 @@ shape of <span class="math notranslate nohighlight">\((N, 4, 4)\)</span> or <spa
 Default:  <code class="code docutils literal notranslate"><span class="pre">1e-09</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed distance with shape <span class="math notranslate nohighlight">\((*, N)\)</span>.</p>
 </dd>
 </dl>
@@ -468,7 +468,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">1e-0
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.linalg.</span></span><span class="sig-name descname"><span class="pre">squared_norm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#kornia.geometry.linalg.squared_norm" title="Permalink to this definition">#</a></dt>
 <dd><p>Return the squared norm of a vector.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 </dl>
@@ -479,7 +479,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">1e-0
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.linalg.</span></span><span class="sig-name descname"><span class="pre">batched_dot_product</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdim</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/linalg.html#batched_dot_product"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.linalg.batched_dot_product" title="Permalink to this definition">#</a></dt>
 <dd><p>Return a batched version of .dot()</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 </dl>
@@ -491,7 +491,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">1e-0
 <dd><p>Compute the Euclidean distance between two set of n-dimensional points.</p>
 <p>More: <a class="reference external" href="https://en.wikipedia.org/wiki/Euclidean_distance">https://en.wikipedia.org/wiki/Euclidean_distance</a></p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – first set of points of shape <span class="math notranslate nohighlight">\((*, N)\)</span>.</p></li>
 <li><p><strong>y</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – second set of points of shape <span class="math notranslate nohighlight">\((*, N)\)</span>.</p></li>
@@ -501,7 +501,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 Default:  <code class="code docutils literal notranslate"><span class="pre">1e-06</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 </dl>

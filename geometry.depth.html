@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.geometry.epipolar" href="geometry.epipolar.html" /><link rel="prev" title="kornia.geometry.conversions" href="geometry.conversions.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/geometry.depth.html" />
 
@@ -314,17 +314,17 @@
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.depth.</span></span><span class="sig-name descname"><span class="pre">depth_from_disparity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">disparity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baseline</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">focal</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/depth.html#depth_from_disparity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.depth.depth_from_disparity" title="Permalink to this definition">#</a></dt>
 <dd><p>Computes depth from disparity.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>disparity</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Disparity tensor of shape <span class="math notranslate nohighlight">\((*, H, W)\)</span>.</p></li>
 <li><p><strong>baseline</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]) – float/tensor containing the distance between the two lenses.</p></li>
 <li><p><strong>focal</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]) – float/tensor containing the focal length.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Depth map of the shape <span class="math notranslate nohighlight">\((*, H, W)\)</span>.</p>
 </dd>
 </dl>
@@ -343,7 +343,7 @@
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.depth.</span></span><span class="sig-name descname"><span class="pre">depth_to_3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">depth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_matrix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize_points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/depth.html#depth_to_3d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.depth.depth_to_3d" title="Permalink to this definition">#</a></dt>
 <dd><p>Compute a 3d point per pixel given its depth value and the camera intrinsics.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>depth</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – image tensor containing a depth value per pixel with shape <span class="math notranslate nohighlight">\((B, 1, H, W)\)</span>.</p></li>
 <li><p><strong>camera_matrix</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor containing the camera intrinsics with shape <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
@@ -352,10 +352,10 @@ represented as the Euclidean ray length from the camera position.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>tensor with a 3d point per pixel of the same resolution as the input <span class="math notranslate nohighlight">\((B, 3, H, W)\)</span>.</p>
 </dd>
 </dl>
@@ -373,7 +373,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.depth.</span></span><span class="sig-name descname"><span class="pre">depth_to_normals</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">depth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_matrix</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalize_points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/depth.html#depth_to_normals"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.depth.depth_to_normals" title="Permalink to this definition">#</a></dt>
 <dd><p>Compute the normal surface per pixel.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>depth</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – image tensor containing a depth value per pixel with shape <span class="math notranslate nohighlight">\((B, 1, H, W)\)</span>.</p></li>
 <li><p><strong>camera_matrix</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor containing the camera intrinsics with shape <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
@@ -382,10 +382,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <li><p><strong>position.</strong> (<em>represented as the Euclidean ray length from the camera</em>) – </p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>tensor with a normal surface vector per pixel of the same resolution as the input <span class="math notranslate nohighlight">\((B, 3, H, W)\)</span>.</p>
 </dd>
 </dl>
@@ -405,7 +405,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <p>Compute 3d points from the depth, transform them using given transformation, then project the point cloud to an
 image plane.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image_src</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – image tensor in the source frame with shape <span class="math notranslate nohighlight">\((B,D,H,W)\)</span>.</p></li>
 <li><p><strong>depth_dst</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – depth tensor in the destination frame with shape <span class="math notranslate nohighlight">\((B,1,H,W)\)</span>.</p></li>
@@ -416,10 +416,10 @@ is represented as the Euclidean ray length from the camera position.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the warped tensor in the source frame with shape <span class="math notranslate nohighlight">\((B,3,H,W)\)</span>.</p>
 </dd>
 </dl>

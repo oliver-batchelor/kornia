@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.geometry.boxes" href="geometry.boxes.html" /><link rel="prev" title="kornia.geometry" href="geometry.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/geometry.bbox.html" />
 
@@ -315,7 +315,7 @@
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.bbox.</span></span><span class="sig-name descname"><span class="pre">bbox_generator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/bbox.html#bbox_generator"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.bbox.bbox_generator" title="Permalink to this definition">#</a></dt>
 <dd><p>Generate 2D bounding boxes according to the provided start coords, width and height.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x_start</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – a tensor containing the x coordinates of the bounding boxes to be extracted. Shape must be a scalar
 tensor or <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
@@ -325,10 +325,10 @@ tensor or <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
 <li><p><strong>height</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – heights of the masked image. Shape must be a scalar tensor or <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the bounding box tensor.</p>
 </dd>
 </dl>
@@ -356,7 +356,7 @@ tensor or <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.bbox.</span></span><span class="sig-name descname"><span class="pre">bbox_generator3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z_start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">depth</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/bbox.html#bbox_generator3d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.bbox.bbox_generator3d" title="Permalink to this definition">#</a></dt>
 <dd><p>Generate 3D bounding boxes according to the provided start coords, width, height and depth.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x_start</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – a tensor containing the x coordinates of the bounding boxes to be extracted. Shape must be a scalar
 tensor or <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
@@ -369,10 +369,10 @@ tensor or <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
 <li><p><strong>depth</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – depths of the masked image. Shape must be a scalar tensor or <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the 3d bounding box tensor <span class="math notranslate nohighlight">\((B, 8, 3)\)</span>.</p>
 </dd>
 </dl>
@@ -410,7 +410,7 @@ tensor or <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.bbox.</span></span><span class="sig-name descname"><span class="pre">bbox_to_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/bbox.html#bbox_to_mask"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.bbox.bbox_to_mask" title="Permalink to this definition">#</a></dt>
 <dd><p>Convert 2D bounding boxes to masks. Covered area is 1. and the remaining is 0.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>boxes</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – a tensor containing the coordinates of the bounding boxes to be extracted. The tensor must have the shape
 of Bx4x2, where each box is defined in the following <code class="docutils literal notranslate"><span class="pre">clockwise</span></code> order: top-left, top-right, bottom-right
@@ -419,10 +419,10 @@ and bottom-left. The coordinates must be in the x, y order.</p></li>
 <li><p><strong>height</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – height of the masked image.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the output mask tensor.</p>
 </dd>
 </dl>
@@ -452,7 +452,7 @@ and bottom-left. The coordinates must be in the x, y order.</p></li>
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.bbox.</span></span><span class="sig-name descname"><span class="pre">bbox_to_mask3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/bbox.html#bbox_to_mask3d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.bbox.bbox_to_mask3d" title="Permalink to this definition">#</a></dt>
 <dd><p>Convert 3D bounding boxes to masks. Covered area is 1. and the remaining is 0.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>boxes</strong> – a tensor containing the coordinates of the bounding boxes to be extracted. The tensor must have the shape
 of Bx8x3, where each box is defined in the following <code class="docutils literal notranslate"><span class="pre">clockwise</span></code> order: front-top-left, front-top-right,
@@ -461,7 +461,7 @@ The coordinates must be in the x, y, z order.</p></li>
 <li><p><strong>size</strong> – depth, height and width of the masked image.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>the output mask tensor.</p>
 </dd>
 </dl>
@@ -509,12 +509,12 @@ The coordinates must be in the x, y, z order.</p></li>
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.bbox.</span></span><span class="sig-name descname"><span class="pre">infer_bbox_shape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/bbox.html#infer_bbox_shape"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.bbox.infer_bbox_shape" title="Permalink to this definition">#</a></dt>
 <dd><p>Auto-infer the output sizes for the given 2D bounding boxes.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>boxes</strong> – a tensor containing the coordinates of the bounding boxes to be extracted. The tensor must have the shape
 of Bx4x2, where each box is defined in the following <code class="docutils literal notranslate"><span class="pre">clockwise</span></code> order: top-left, top-right, bottom-right,
 bottom-left. The coordinates must be in the x, y order.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p>Bounding box heights, shape of <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
 <li><p>Boundingbox widths, shape of <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
@@ -545,13 +545,13 @@ bottom-left. The coordinates must be in the x, y order.</p>
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.bbox.</span></span><span class="sig-name descname"><span class="pre">infer_bbox_shape3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/bbox.html#infer_bbox_shape3d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.bbox.infer_bbox_shape3d" title="Permalink to this definition">#</a></dt>
 <dd><p>Auto-infer the output sizes for the given 3D bounding boxes.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>boxes</strong> – a tensor containing the coordinates of the bounding boxes to be extracted. The tensor must have the shape
 of Bx8x3, where each box is defined in the following <code class="docutils literal notranslate"><span class="pre">clockwise</span></code> order: front-top-left, front-top-right,
 front-bottom-right, front-bottom-left, back-top-left, back-top-right, back-bottom-right, back-bottom-left.
 The coordinates must be in the x, y, z order.</p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p>Bounding box depths, shape of <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
 <li><p>Bounding box heights, shape of <span class="math notranslate nohighlight">\((B,)\)</span>.</p></li>
@@ -589,17 +589,17 @@ The coordinates must be in the x, y, z order.</p>
 <dd><p>Perform non-maxima suppression (NMS) on a given tensor of bounding boxes according to the intersection-over-
 union (IoU).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>boxes</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor containing the encoded bounding boxes with the shape <span class="math notranslate nohighlight">\((N, (x_1, y_1, x_2, y_2))\)</span>.</p></li>
 <li><p><strong>scores</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor containing the scores associated to each bounding box with shape <span class="math notranslate nohighlight">\((N,)\)</span>.</p></li>
 <li><p><strong>iou_threshold</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – the throshold to discard the overlapping boxes.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A tensor mask with the indices to keep from the input set of boxes and scores.</p>
 </dd>
 </dl>
@@ -621,7 +621,7 @@ union (IoU).</p>
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.bbox.</span></span><span class="sig-name descname"><span class="pre">transform_bbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">trans_mat</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'xyxy'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">restore_coordinates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/bbox.html#transform_bbox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.bbox.transform_bbox" title="Permalink to this definition">#</a></dt>
 <dd><p>Apply a transformation matrix to a box or batch of boxes.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>trans_mat</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><em>torch.Tensor</em></a>) – The transformation matrix to be applied with a shape of <span class="math notranslate nohighlight">\((3, 3)\)</span>
 or batched as <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
@@ -636,10 +636,10 @@ coordinates to a valid bounding box.
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)">torch.Tensor</a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The set of transformed points in the specified mode</p>
 </dd>
 </dl>
@@ -650,12 +650,12 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.bbox.</span></span><span class="sig-name descname"><span class="pre">validate_bbox</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/bbox.html#validate_bbox"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.bbox.validate_bbox" title="Permalink to this definition">#</a></dt>
 <dd><p>Validate if a 2D bounding box usable or not. This function checks if the boxes are rectangular or not.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>boxes</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – a tensor containing the coordinates of the bounding boxes to be extracted. The tensor must have the shape
 of Bx4x2, where each box is defined in the following <code class="docutils literal notranslate"><span class="pre">clockwise</span></code> order: top-left, top-right, bottom-right,
 bottom-left. The coordinates must be in the x, y order.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
 </dd>
 </dl>
@@ -666,13 +666,13 @@ bottom-left. The coordinates must be in the x, y order.</p>
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.bbox.</span></span><span class="sig-name descname"><span class="pre">validate_bbox3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/bbox.html#validate_bbox3d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.bbox.validate_bbox3d" title="Permalink to this definition">#</a></dt>
 <dd><p>Validate if a 3D bounding box usable or not. This function checks if the boxes are cube or not.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>boxes</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – a tensor containing the coordinates of the bounding boxes to be extracted. The tensor must have the shape
 of Bx8x3, where each box is defined in the following <code class="docutils literal notranslate"><span class="pre">clockwise</span></code> order: front-top-left, front-top-right,
 front-bottom-right, front-bottom-left, back-top-left, back-top-right, back-bottom-right, back-bottom-left.
 The coordinates must be in the x, y, z order.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
 </dd>
 </dl>

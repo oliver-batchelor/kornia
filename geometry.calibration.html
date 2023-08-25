@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.geometry.camera" href="geometry.camera.html" /><link rel="prev" title="kornia.geometry.boxes" href="geometry.boxes.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/geometry.calibration.html" />
 
@@ -421,7 +421,7 @@ v_d = f_v \bar{v}'_d + v_0 \enspace.
 tangential <span class="math notranslate nohighlight">\((p_1, p_2)\)</span>, thin prism <span class="math notranslate nohighlight">\((s_1, s_2, s_3, s_4)\)</span>, and tilt <span class="math notranslate nohighlight">\((\tau_x, \tau_y)\)</span>
 distortion models are considered in this function.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>image</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Input image with shape <span class="math notranslate nohighlight">\((*, C, H, W)\)</span>.</p></li>
 <li><p><strong>K</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Intrinsic camera matrix with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
@@ -430,10 +430,10 @@ distortion models are considered in this function.</p>
 a vector with 4, 5, 8, 12 or 14 elements with shape <span class="math notranslate nohighlight">\((*, n)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Undistorted image with shape <span class="math notranslate nohighlight">\((*, C, H, W)\)</span>.</p>
 </dd>
 </dl>
@@ -456,7 +456,7 @@ a vector with 4, 5, 8, 12 or 14 elements with shape <span class="math notranslat
 tangential <span class="math notranslate nohighlight">\((p_1, p_2)\)</span>, thin prism <span class="math notranslate nohighlight">\((s_1, s_2, s_3, s_4)\)</span>, and tilt <span class="math notranslate nohighlight">\((\tau_x, \tau_y)\)</span>
 distortion models are considered in this function.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>points</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><em>torch.Tensor</em></a>) – Input image points with shape <span class="math notranslate nohighlight">\((*, N, 2)\)</span>.</p></li>
 <li><p><strong>K</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><em>torch.Tensor</em></a>) – Intrinsic camera matrix with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
@@ -468,10 +468,10 @@ scale and shift the result by using a different matrix. Shape: <span class="math
 <li><p><strong>num_iters</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – Number of undistortion iterations. Default: 5.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)">torch.Tensor</a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Undistorted 2D points with shape <span class="math notranslate nohighlight">\((*, N, 2)\)</span>.</p>
 </dd>
 </dl>
@@ -497,7 +497,7 @@ scale and shift the result by using a different matrix. Shape: <span class="math
 tangential <span class="math notranslate nohighlight">\((p_1, p_2)\)</span>, thin prism <span class="math notranslate nohighlight">\((s_1, s_2, s_3, s_4)\)</span>, and tilt <span class="math notranslate nohighlight">\((\tau_x, \tau_y)\)</span>
 distortion models are considered in this function.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>points</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Input image points with shape <span class="math notranslate nohighlight">\((*, N, 2)\)</span>.</p></li>
 <li><p><strong>K</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Intrinsic camera matrix with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
@@ -508,10 +508,10 @@ a vector with 4, 5, 8, 12 or 14 elements with shape <span class="math notranslat
 scale and shift the result by using a different matrix. Shape: <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>. Default: None.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Undistorted 2D points with shape <span class="math notranslate nohighlight">\((*, N, 2)\)</span>.</p>
 </dd>
 </dl>
@@ -529,7 +529,7 @@ scale and shift the result by using a different matrix. Shape: <span class="math
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.calibration.</span></span><span class="sig-name descname"><span class="pre">tilt_projection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">taux</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tauy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">return_inverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/calibration/distort.html#tilt_projection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.calibration.tilt_projection" title="Permalink to this definition">#</a></dt>
 <dd><p>Estimate the tilt projection matrix or the inverse tilt projection matrix.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>taux</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Rotation angle in radians around the <span class="math notranslate nohighlight">\(x\)</span>-axis with shape <span class="math notranslate nohighlight">\((*, 1)\)</span>.</p></li>
 <li><p><strong>tauy</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Rotation angle in radians around the <span class="math notranslate nohighlight">\(y\)</span>-axis with shape <span class="math notranslate nohighlight">\((*, 1)\)</span>.</p></li>
@@ -537,10 +537,10 @@ scale and shift the result by using a different matrix. Shape: <span class="math
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>Inverse tilt projection matrix with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)">torch.Tensor</a></p>
 </dd>
 </dl>
@@ -568,7 +568,7 @@ is sensitive to the value of the svd_eps parameter.</p>
 <p>Another bad condition occurs when the camera and the points lie on a
 twisted cubic. However, this function does not check for this condition.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>world_points</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – A tensor with shape <span class="math notranslate nohighlight">\((B, N, 3)\)</span> representing
 the points in the world space.</p></li>
@@ -583,10 +583,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 Default:  <code class="code docutils literal notranslate"><span class="pre">0.0001</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A tensor with shape <span class="math notranslate nohighlight">\((B, 3, 4)\)</span> representing the estimated world to
 camera transformation matrices (also known as the extrinsic matrices).</p>
 </dd>

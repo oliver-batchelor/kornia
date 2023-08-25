@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.geometry.calibration" href="geometry.calibration.html" /><link rel="prev" title="kornia.geometry.bbox" href="geometry.bbox.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/geometry.boxes.html" />
 
@@ -315,7 +315,7 @@
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.geometry.boxes.</span></span><span class="sig-name descname"><span class="pre">Boxes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_if_not_floating_point</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'vertices_plus'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes" title="Permalink to this definition">#</a></dt>
 <dd><p>2D boxes containing N or BxN boxes.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>boxes</strong> – 2D boxes, shape of <span class="math notranslate nohighlight">\((N, 4, 2)\)</span>, <span class="math notranslate nohighlight">\((B, N, 4, 2)\)</span> or a list of <span class="math notranslate nohighlight">\((N, 4, 2)\)</span>.
 See below for more details.</p></li>
@@ -341,7 +341,7 @@ a box is defined as <code class="docutils literal notranslate"><span class="pre"
 <span class="sig-name descname"><span class="pre">compute_area</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.compute_area"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.compute_area" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns <span class="math notranslate nohighlight">\((B, N)\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 </dl>
@@ -364,7 +364,7 @@ a box is defined as <code class="docutils literal notranslate"><span class="pre"
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'xyxy'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validate_boxes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.from_tensor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.from_tensor" title="Permalink to this definition">#</a></dt>
 <dd><p>Helper method to easily create <a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a> from boxes stored in another format.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>boxes</strong> – 2D boxes, shape of <span class="math notranslate nohighlight">\((N, 4)\)</span>, <span class="math notranslate nohighlight">\((B, N, 4)\)</span>, <span class="math notranslate nohighlight">\((N, 4, 2)\)</span> or <span class="math notranslate nohighlight">\((B, N, 4, 2)\)</span>.</p></li>
 <li><p><strong>mode</strong> (<em>optional</em>) – <p>The format in which the boxes are provided.
@@ -391,7 +391,7 @@ and height &gt;= 1 (&gt;= 2 when mode ends with ‘_plus’ suffix).
 Default:  <code class="code docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a> class containing the original <cite>boxes</cite> in the format specified by <code class="docutils literal notranslate"><span class="pre">mode</span></code>.</p>
 </dd>
 </dl>
@@ -417,7 +417,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <span class="sig-name descname"><span class="pre">get_boxes_shape</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.get_boxes_shape"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.get_boxes_shape" title="Permalink to this definition">#</a></dt>
 <dd><p>Compute boxes heights and widths.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><ul class="simple">
 <li><p>Boxes heights, shape of <span class="math notranslate nohighlight">\((N,)\)</span> or <span class="math notranslate nohighlight">\((B,N)\)</span>.</p></li>
 <li><p>Boxes widths, shape of <span class="math notranslate nohighlight">\((N,)\)</span> or <span class="math notranslate nohighlight">\((B,N)\)</span>.</p></li>
@@ -441,14 +441,14 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <p>Say, current instance holds <span class="math notranslate nohighlight">\((B, N, 4, 2)\)</span> and the incoming boxes holds <span class="math notranslate nohighlight">\((B, M, 4, 2)\)</span>,
 the merge results in <span class="math notranslate nohighlight">\((B, N + M, 4, 2)\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>boxes</strong> (<a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a>) – 2D boxes.</p></li>
 <li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a></p>
 </dd>
 </dl>
@@ -459,10 +459,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">pad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding_size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.pad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.pad" title="Permalink to this definition">#</a></dt>
 <dd><p>Pad a bounding box.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>padding_size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (B, 4)</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a></p>
 </dd>
 </dl>
@@ -473,7 +473,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.to"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.to" title="Permalink to this definition">#</a></dt>
 <dd><p>Like <code class="xref py py-func docutils literal notranslate"><span class="pre">torch.nn.Module.to()</span></code> method.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes">Boxes</a></p>
 </dd>
 </dl>
@@ -484,16 +484,16 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">to_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.to_mask"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.to_mask" title="Permalink to this definition">#</a></dt>
 <dd><p>Convert 2D boxes to masks. Covered area is 1 and the remaining is 0.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>height</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – height of the masked image/images.</p></li>
 <li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – width of the masked image/images.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the output mask tensor, shape of <span class="math notranslate nohighlight">\((N, width, height)\)</span> or <span class="math notranslate nohighlight">\((B,N, width, height)\)</span> and dtype of
 <a class="reference internal" href="#kornia.geometry.boxes.Boxes.dtype" title="kornia.geometry.boxes.Boxes.dtype"><code class="xref py py-func docutils literal notranslate"><span class="pre">Boxes.dtype()</span></code></a> (it can be any floating point dtype).</p>
 </dd>
@@ -525,7 +525,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <dd><p>Cast <a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a> to a tensor. <code class="docutils literal notranslate"><span class="pre">mode</span></code> controls which 2D boxes format should be use to represent
 boxes in the tensor.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> | </em><em>None</em><em>, </em><em>optional</em>) – <p>the output box format. It could be:
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p>
@@ -548,14 +548,14 @@ if the boxes are from a box list whilst <cite>from_tensor</cite>.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p>‘vertices’ or ‘verticies_plus’: <span class="math notranslate nohighlight">\((N, 4, 2)\)</span> or <span class="math notranslate nohighlight">\((B, N, 4, 2)\)</span>.</p></li>
 <li><p>Any other value: <span class="math notranslate nohighlight">\((N, 4)\)</span> or <span class="math notranslate nohighlight">\((B, N, 4)\)</span>.</p></li>
 </ul>
 </p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>Boxes tensor in the <code class="docutils literal notranslate"><span class="pre">mode</span></code> format. The shape depends with the <code class="docutils literal notranslate"><span class="pre">mode</span></code> value</p>
 </dd>
 </dl>
@@ -572,17 +572,17 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">transform_boxes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.transform_boxes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.transform_boxes" title="Permalink to this definition">#</a></dt>
 <dd><p>Apply a transformation matrix to the 2D boxes.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>M</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The transformation matrix to be applied, shape of <span class="math notranslate nohighlight">\((3, 3)\)</span> or <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
 <li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The transformed boxes.</p>
 </dd>
 </dl>
@@ -593,7 +593,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">transform_boxes_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.transform_boxes_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.transform_boxes_" title="Permalink to this definition">#</a></dt>
 <dd><p>Inplace version of <a class="reference internal" href="#kornia.geometry.boxes.Boxes.transform_boxes" title="kornia.geometry.boxes.Boxes.transform_boxes"><code class="xref py py-func docutils literal notranslate"><span class="pre">Boxes.transform_boxes()</span></code></a></p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a></p>
 </dd>
 </dl>
@@ -604,7 +604,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">translate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'warp'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.translate"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.translate" title="Permalink to this definition">#</a></dt>
 <dd><p>Translates boxes by the provided size.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – translate size for x, y direction, shape of <span class="math notranslate nohighlight">\((B, 2)\)</span>.</p></li>
 <li><p><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – “warp” or “fast”.
@@ -613,10 +613,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'war
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The transformed boxes.</p>
 </dd>
 </dl>
@@ -626,11 +626,21 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <dt class="sig sig-object py" id="kornia.geometry.boxes.Boxes.trim">
 <span class="sig-name descname"><span class="pre">trim</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">correspondence_preserve</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.trim"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.trim" title="Permalink to this definition">#</a></dt>
 <dd><p>Trim out zero padded boxes.</p>
-<p>Given box arrangements of shape <span class="math notranslate nohighlight">\((4, 4, Box)\)</span>:
-:rtype: <a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a></p>
+<p>Given box arrangements of shape <span class="math notranslate nohighlight">\((4, 4, Box)\)</span>:</p>
 <blockquote>
 <div><div class="table-wrapper docutils container">
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>–</p></td>
 <td><p>Box</p></td>
@@ -681,6 +691,17 @@ shape <span class="math notranslate nohighlight">\((4, 3, Box)\)</span>:</p>
 <blockquote>
 <div><div class="table-wrapper docutils container">
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>–</p></td>
 <td><p>Box</p></td>
@@ -720,6 +741,17 @@ shape <span class="math notranslate nohighlight">\((4, 3, Box)\)</span>:</p>
 <blockquote>
 <div><div class="table-wrapper docutils container">
 <table class="docutils align-default">
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+<col style="width: 14%" />
+<col style="width: 9%" />
+</colgroup>
 <tbody>
 <tr class="row-odd"><td><p>–</p></td>
 <td><p>Box</p></td>
@@ -745,6 +777,11 @@ shape <span class="math notranslate nohighlight">\((4, 3, Box)\)</span>:</p>
 </table>
 </div>
 </div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -752,10 +789,10 @@ shape <span class="math notranslate nohighlight">\((4, 3, Box)\)</span>:</p>
 <span class="sig-name descname"><span class="pre">unpad</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">padding_size</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes.unpad"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes.unpad" title="Permalink to this definition">#</a></dt>
 <dd><p>Pad a bounding box.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>padding_size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (B, 4)</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a></p>
 </dd>
 </dl>
@@ -768,7 +805,7 @@ shape <span class="math notranslate nohighlight">\((4, 3, Box)\)</span>:</p>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">kornia.geometry.boxes.</span></span><span class="sig-name descname"><span class="pre">Boxes3D</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">raise_if_not_floating_point</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'xyzxyz_plus'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes3D"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D" title="Permalink to this definition">#</a></dt>
 <dd><p>3D boxes containing N or BxN boxes.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>boxes</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – 3D boxes, shape of <span class="math notranslate nohighlight">\((N,8,3)\)</span> or <span class="math notranslate nohighlight">\((B,N,8,3)\)</span>. See below for more details.</p></li>
 <li><p><strong>raise_if_not_floating_point</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – flag to control floating point casting behaviour when <cite>boxes</cite> is not a floating
@@ -802,7 +839,7 @@ Coordinates must be in <code class="docutils literal notranslate"><span class="p
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_tensor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">boxes</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'xyzxyz'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validate_boxes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes3D.from_tensor"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D.from_tensor" title="Permalink to this definition">#</a></dt>
 <dd><p>Helper method to easily create <a class="reference internal" href="#kornia.geometry.boxes.Boxes3D" title="kornia.geometry.boxes.Boxes3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes3D</span></code></a> from 3D boxes stored in another format.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>boxes</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – 3D boxes, shape of <span class="math notranslate nohighlight">\((N,6)\)</span> or <span class="math notranslate nohighlight">\((B,N,6)\)</span>.</p></li>
 <li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – <p>The format in which the 3D boxes are provided.
@@ -821,10 +858,10 @@ and depth &gt;= 1 (&gt;= 2 when mode ends with ‘_plus’ suffix).
 Default:  <code class="code docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes3D" title="kornia.geometry.boxes.Boxes3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes3D</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes3D" title="kornia.geometry.boxes.Boxes3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes3D</span></code></a> class containing the original <cite>boxes</cite> in the format specified by <code class="docutils literal notranslate"><span class="pre">mode</span></code>.</p>
 </dd>
 </dl>
@@ -858,7 +895,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <span class="sig-name descname"><span class="pre">get_boxes_shape</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes3D.get_boxes_shape"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D.get_boxes_shape" title="Permalink to this definition">#</a></dt>
 <dd><p>Compute boxes heights and widths.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><ul class="simple">
 <li><p>Boxes depths, shape of <span class="math notranslate nohighlight">\((N,)\)</span> or <span class="math notranslate nohighlight">\((B,N)\)</span>.</p></li>
 <li><p>Boxes heights, shape of <span class="math notranslate nohighlight">\((N,)\)</span> or <span class="math notranslate nohighlight">\((B,N)\)</span>.</p></li>
@@ -881,7 +918,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <span class="sig-name descname"><span class="pre">to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">device</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes3D.to"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D.to" title="Permalink to this definition">#</a></dt>
 <dd><p>Like <code class="xref py py-func docutils literal notranslate"><span class="pre">torch.nn.Module.to()</span></code> method.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes3D" title="kornia.geometry.boxes.Boxes3D">Boxes3D</a></p>
 </dd>
 </dl>
@@ -892,17 +929,17 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <span class="sig-name descname"><span class="pre">to_mask</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">depth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">height</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">width</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes3D.to_mask"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D.to_mask" title="Permalink to this definition">#</a></dt>
 <dd><p>Convert ·D boxes to masks. Covered area is 1 and the remaining is 0.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>depth</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – depth of the masked image/images.</p></li>
 <li><p><strong>height</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – height of the masked image/images.</p></li>
 <li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – width of the masked image/images.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><dl class="simple">
 <dt>the output mask tensor, shape of <span class="math notranslate nohighlight">\((N, depth, width, height)\)</span> or <span class="math notranslate nohighlight">\((B,N, depth, width, height)\)</span></dt><dd><p>and dtype of <a class="reference internal" href="#kornia.geometry.boxes.Boxes3D.dtype" title="kornia.geometry.boxes.Boxes3D.dtype"><code class="xref py py-func docutils literal notranslate"><span class="pre">Boxes3D.dtype()</span></code></a> (it can be any floating point dtype).</p>
 </dd>
@@ -959,7 +996,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dd><p>Cast <a class="reference internal" href="#kornia.geometry.boxes.Boxes3D" title="kornia.geometry.boxes.Boxes3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes3D</span></code></a> to a tensor. <code class="docutils literal notranslate"><span class="pre">mode</span></code> controls which 3D boxes format should be use to represent
 boxes in the tensor.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – <p>The format in which the boxes are provided.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'xyzxyz'</span></code></p>
 <ul class="simple">
@@ -982,14 +1019,14 @@ and <code class="docutils literal notranslate"><span class="pre">depth</span> <s
 </ul>
 </p>
 </dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p><ul class="simple">
 <li><p>‘vertices’ or ‘verticies_plus’: <span class="math notranslate nohighlight">\((N, 8, 3)\)</span> or <span class="math notranslate nohighlight">\((B, N, 8, 3)\)</span>.</p></li>
 <li><p>Any other value: <span class="math notranslate nohighlight">\((N, 6)\)</span> or <span class="math notranslate nohighlight">\((B, N, 6)\)</span>.</p></li>
 </ul>
 </p>
 </dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p>3D Boxes tensor in the <code class="docutils literal notranslate"><span class="pre">mode</span></code> format. The shape depends with the <code class="docutils literal notranslate"><span class="pre">mode</span></code> value</p>
 </dd>
 </dl>
@@ -1011,17 +1048,17 @@ and <code class="docutils literal notranslate"><span class="pre">depth</span> <s
 <span class="sig-name descname"><span class="pre">transform_boxes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inplace</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes3D.transform_boxes"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D.transform_boxes" title="Permalink to this definition">#</a></dt>
 <dd><p>Apply a transformation matrix to the 3D boxes.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>M</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The transformation matrix to be applied, shape of <span class="math notranslate nohighlight">\((4, 4)\)</span> or <span class="math notranslate nohighlight">\((B, 4, 4)\)</span>.</p></li>
 <li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes3D" title="kornia.geometry.boxes.Boxes3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes3D</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The transformed boxes.</p>
 </dd>
 </dl>
@@ -1032,7 +1069,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <span class="sig-name descname"><span class="pre">transform_boxes_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/boxes.html#Boxes3D.transform_boxes_"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D.transform_boxes_" title="Permalink to this definition">#</a></dt>
 <dd><p>Inplace version of <a class="reference internal" href="#kornia.geometry.boxes.Boxes3D.transform_boxes" title="kornia.geometry.boxes.Boxes3D.transform_boxes"><code class="xref py py-func docutils literal notranslate"><span class="pre">Boxes3D.transform_boxes()</span></code></a></p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes3D" title="kornia.geometry.boxes.Boxes3D"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes3D</span></code></a></p>
 </dd>
 </dl>

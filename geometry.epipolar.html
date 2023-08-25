@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.geometry.homography" href="geometry.homography.html" /><link rel="prev" title="kornia.geometry.depth" href="geometry.depth.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/geometry.epipolar.html" />
 
@@ -319,17 +319,17 @@
 <dd><p>Get Essential matrix from Fundamental and Camera matrices.</p>
 <p>Uses the method from Hartley/Zisserman 9.6 pag 257 (formula 9.12).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>F_mat</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The fundamental matrix with shape of <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
 <li><p><strong>K1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The camera matrix from first camera with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
 <li><p><strong>K2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The camera matrix from second camera with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The essential matrix with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p>
 </dd>
 </dl>
@@ -341,7 +341,7 @@
 <dd><p>Get the Essential matrix from Camera motion (Rs and ts).</p>
 <p>Reference: Hartley/Zisserman 9.6 pag 257 (formula 9.12)</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>R1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The first camera rotation matrix with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
 <li><p><strong>t1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The first camera translation vector with shape <span class="math notranslate nohighlight">\((*, 3, 1)\)</span>.</p></li>
@@ -349,10 +349,10 @@
 <li><p><strong>t2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The second camera translation vector with shape <span class="math notranslate nohighlight">\((*, 3, 1)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The Essential matrix with the shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p>
 </dd>
 </dl>
@@ -365,13 +365,13 @@
 <p>This function decomposes the essential matrix E using svd decomposition [96]
 and give the possible solutions: <span class="math notranslate nohighlight">\(R1, R2, t\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>E_mat</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The essential matrix in the form of <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A tuple containing the first and second possible rotation matrices and the translation vector.
 The shape of the tensors with be same input <span class="math notranslate nohighlight">\([(*, 3, 3), (*, 3, 3), (*, 3, 1)]\)</span>.</p>
 </dd>
@@ -385,13 +385,13 @@ The shape of the tensors with be same input <span class="math notranslate nohigh
 <p>Computes and return four possible poses exist for the decomposition of the Essential
 matrix. The possible solutions are <span class="math notranslate nohighlight">\([R1,t], [R1,−t], [R2,t], [R2,−t]\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>E_mat</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The essential matrix in the form of <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The rotation and translation containing the four possible combination for the retrieved motion.
 The tuple is as following <span class="math notranslate nohighlight">\([(*, 4, 3, 3), (*, 4, 3, 1)]\)</span>.</p>
 </dd>
@@ -407,7 +407,7 @@ The tuple is as following <span class="math notranslate nohighlight">\([(*, 4, 3
 the best solution based on the combination that gives more 3d points in front of the camera plane from
 <a class="reference internal" href="#kornia.geometry.epipolar.triangulate_points" title="kornia.geometry.epipolar.triangulate_points"><code class="xref py py-meth docutils literal notranslate"><span class="pre">triangulate_points()</span></code></a>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>E_mat</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The essential matrix in the form of <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
 <li><p><strong>K1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The camera matrix from first camera with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
@@ -423,10 +423,10 @@ semantics. Mask is of shape <span class="math notranslate nohighlight">\((*, N)\
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The rotation and translation plus the 3d triangulated points.
 The tuple is as following <span class="math notranslate nohighlight">\([(*, 3, 3), (*, 3, 1), (*, N, 3)]\)</span>.</p>
 </dd>
@@ -441,7 +441,7 @@ The tuple is as following <span class="math notranslate nohighlight">\([(*, 3, 3
 one assuming the first one to be at the origin. If <span class="math notranslate nohighlight">\(T1\)</span> and <span class="math notranslate nohighlight">\(T2\)</span> are the camera motions,
 the computed relative motion is <span class="math notranslate nohighlight">\(T = T_{2}T^{−1}_{1}\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>R1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The first camera rotation matrix with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
 <li><p><strong>t1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The first camera translation vector with shape <span class="math notranslate nohighlight">\((*, 3, 1)\)</span>.</p></li>
@@ -449,10 +449,10 @@ the computed relative motion is <span class="math notranslate nohighlight">\(T =
 <li><p><strong>t2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The second camera translation vector with shape <span class="math notranslate nohighlight">\((*, 3, 1)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>A tuple with the relative rotation matrix and
 translation vector with the shape of <span class="math notranslate nohighlight">\([(*, 3, 3), (*, 3, 1)]\)</span>.</p>
 </dd>
@@ -468,7 +468,7 @@ translation vector with the shape of <span class="math notranslate nohighlight">
 <dd><p>Compute the fundamental matrix using the DLT formulation.</p>
 <p>The linear system is solved by using the Weighted Least Squares Solution for the 8 Points algorithm.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>points1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – A set of points in the first image with a tensor shape <span class="math notranslate nohighlight">\((B, N, 2), N&gt;=8\)</span>.</p></li>
 <li><p><strong>points2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – A set of points in the second image with a tensor shape <span class="math notranslate nohighlight">\((B, N, 2), N&gt;=8\)</span>.</p></li>
@@ -476,10 +476,10 @@ translation vector with the shape of <span class="math notranslate nohighlight">
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed fundamental matrix with shape <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p>
 </dd>
 </dl>
@@ -491,17 +491,17 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <dd><p>Get the Fundamental matrix from Essential and camera matrices.</p>
 <p>Uses the method from Hartley/Zisserman 9.6 pag 257 (formula 9.12).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>E_mat</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The essential matrix with shape of <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
 <li><p><strong>K1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The camera matrix from first camera with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
 <li><p><strong>K2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The camera matrix from second camera with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The fundamental matrix with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p>
 </dd>
 </dl>
@@ -512,16 +512,16 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.epipolar.</span></span><span class="sig-name descname"><span class="pre">fundamental_from_projections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">P1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">P2</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/epipolar/fundamental.html#fundamental_from_projections"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.epipolar.fundamental_from_projections" title="Permalink to this definition">#</a></dt>
 <dd><p>Get the Fundamental matrix from Projection matrices.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>P1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The projection matrix from first camera with shape <span class="math notranslate nohighlight">\((*, 3, 4)\)</span>.</p></li>
 <li><p><strong>P2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The projection matrix from second camera with shape <span class="math notranslate nohighlight">\((*, 3, 4)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The fundamental matrix with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p>
 </dd>
 </dl>
@@ -532,16 +532,16 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">None
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.epipolar.</span></span><span class="sig-name descname"><span class="pre">compute_correspond_epilines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">points</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">F_mat</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/epipolar/fundamental.html#compute_correspond_epilines"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.epipolar.compute_correspond_epilines" title="Permalink to this definition">#</a></dt>
 <dd><p>Compute the corresponding epipolar line for a given set of points.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>points</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor containing the set of points to project in the shape of <span class="math notranslate nohighlight">\((*, N, 2)\)</span> or <span class="math notranslate nohighlight">\((*, N, 3)\)</span>.</p></li>
 <li><p><strong>F_mat</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the fundamental to use for projection the points in the shape of <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a tensor with shape <span class="math notranslate nohighlight">\((*, N, 3)\)</span> containing a vector of the epipolar
 lines corresponding to the points to the other image. Each line is described as
 <span class="math notranslate nohighlight">\(ax + by + c = 0\)</span> and encoding the vectors as <span class="math notranslate nohighlight">\((a, b, c)\)</span>.</p>
@@ -559,17 +559,17 @@ about the origin. Reference: Hartley/Zisserman 4.4.4 pag.107</p>
 <p>This operation is an essential step before applying the DLT algorithm in order to consider
 the result as optimal.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>points</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Tensor containing the points to be normalized with shape <span class="math notranslate nohighlight">\((B, N, 2)\)</span>.</p></li>
 <li><p><strong>eps</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <em>optional</em>) – epsilon value to avoid numerical instabilities.
 Default:  <code class="code docutils literal notranslate"><span class="pre">1e-08</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>tuple containing the normalized points in the shape <span class="math notranslate nohighlight">\((B, N, 2)\)</span> and the transformation matrix
 in the shape <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p>
 </dd>
@@ -583,17 +583,17 @@ in the shape <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p
 <p>The function trakes the transformation matrix and normalize so that the value in
 the last row and column is one.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>M</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The transformation to be normalized of any shape with a minimum size of 2x2.</p></li>
 <li><p><strong>eps</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <em>optional</em>) – small value to avoid unstabilities during the backpropagation.
 Default:  <code class="code docutils literal notranslate"><span class="pre">1e-08</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the normalized transformation matrix with same shape as the input.</p>
 </dd>
 </dl>
@@ -604,16 +604,16 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">1e-0
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.epipolar.</span></span><span class="sig-name descname"><span class="pre">get_perpendicular</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">lines</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">points</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/epipolar/fundamental.html#get_perpendicular"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.epipolar.get_perpendicular" title="Permalink to this definition">#</a></dt>
 <dd><p>Compute the perpendicular to a line, through the point.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>lines</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor containing the set of lines <span class="math notranslate nohighlight">\((*, N, 3)\)</span>.</p></li>
 <li><p><strong>points</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – tensor containing the set of points <span class="math notranslate nohighlight">\((*, N, 2)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a tensor with shape <span class="math notranslate nohighlight">\((*, N, 3)\)</span> containing a vector of the epipolar
 perpenducular lines. Each line is described as
 <span class="math notranslate nohighlight">\(ax + by + c = 0\)</span> and encoding the vectors as <span class="math notranslate nohighlight">\((a, b, c)\)</span>.</p>
@@ -626,7 +626,7 @@ perpenducular lines. Each line is described as
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.epipolar.</span></span><span class="sig-name descname"><span class="pre">get_closest_point_on_epipolar_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pts1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pts2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fm</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/epipolar/fundamental.html#get_closest_point_on_epipolar_line"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.epipolar.get_closest_point_on_epipolar_line" title="Permalink to this definition">#</a></dt>
 <dd><p>Return closest point on the epipolar line to the correspondence, given the fundamental matrix.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>pts1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – correspondences from the left images with shape <span class="math notranslate nohighlight">\((*, N, (2|3))\)</span>. If they are not homogeneous,
 converted automatically.</p></li>
@@ -635,10 +635,10 @@ converted automatically.</p></li>
 <li><p><strong>Fm</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – Fundamental matrices with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>. Called Fm to avoid ambiguity with torch.nn.functional.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>point on epipolar line <span class="math notranslate nohighlight">\((*, N, 2)\)</span>.</p>
 </dd>
 </dl>
@@ -652,7 +652,7 @@ converted automatically.</p></li>
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.epipolar.</span></span><span class="sig-name descname"><span class="pre">sampson_epipolar_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pts1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pts2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">squared</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-08</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/epipolar/_metrics.html#sampson_epipolar_distance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.epipolar.sampson_epipolar_distance" title="Permalink to this definition">#</a></dt>
 <dd><p>Return Sampson distance for correspondences given the fundamental matrix.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>pts1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – correspondences from the left images with shape <span class="math notranslate nohighlight">\((*, N, (2|3))\)</span>. If they are not homogeneous,
 converted automatically.</p></li>
@@ -665,10 +665,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 Default:  <code class="code docutils literal notranslate"><span class="pre">1e-08</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed Sampson distance with shape <span class="math notranslate nohighlight">\((*, N)\)</span>.</p>
 </dd>
 </dl>
@@ -679,7 +679,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">1e-0
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.epipolar.</span></span><span class="sig-name descname"><span class="pre">symmetrical_epipolar_distance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pts1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pts2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Fm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">squared</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-08</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/epipolar/_metrics.html#symmetrical_epipolar_distance"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.epipolar.symmetrical_epipolar_distance" title="Permalink to this definition">#</a></dt>
 <dd><p>Return symmetrical epipolar distance for correspondences given the fundamental matrix.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>pts1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – correspondences from the left images with shape <span class="math notranslate nohighlight">\((*, N, (2|3))\)</span>. If they are not homogeneous,
 converted automatically.</p></li>
@@ -692,10 +692,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 Default:  <code class="code docutils literal notranslate"><span class="pre">1e-08</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed Symmetrical distance with shape <span class="math notranslate nohighlight">\((*, N)\)</span>.</p>
 </dd>
 </dl>
@@ -708,7 +708,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">1e-0
 <p>This method measures the distance from points in the right images to the epilines
 of the corresponding points in the left images as they reflect in the right images.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>pts1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – correspondences from the left images with shape
 <span class="math notranslate nohighlight">\((*, N, 2 or 3)\)</span>. If they are not homogeneous, converted automatically.</p></li>
@@ -718,10 +718,10 @@ of the corresponding points in the left images as they reflect in the right imag
 avoid ambiguity with torch.nn.functional.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed Symmetrical distance with shape <span class="math notranslate nohighlight">\((*, N)\)</span>.</p>
 </dd>
 </dl>
@@ -734,7 +734,7 @@ avoid ambiguity with torch.nn.functional.</p></li>
 <p>This method measures the distance from points in the left images to the epilines
 of the corresponding points in the right images as they reflect in the left images.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>pts1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – correspondences from the left images with shape
 <span class="math notranslate nohighlight">\((*, N, 2 or 3)\)</span>. If they are not homogeneous, converted automatically.</p></li>
@@ -744,10 +744,10 @@ of the corresponding points in the right images as they reflect in the left imag
 avoid ambiguity with torch.nn.functional.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the computed Symmetrical distance with shape <span class="math notranslate nohighlight">\((*, N)\)</span>.</p>
 </dd>
 </dl>
@@ -762,17 +762,17 @@ avoid ambiguity with torch.nn.functional.</p></li>
 <dd><p>Get the projection matrix P from K, R and t.</p>
 <p>This function estimate the projection matrix by solving the following equation: <span class="math notranslate nohighlight">\(P = K * [R|t]\)</span>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>K</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the camera matrix with the instrinsics with shape <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
 <li><p><strong>R</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The rotation matrix with shape <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
 <li><p><strong>t</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The translation vector with shape <span class="math notranslate nohighlight">\((B, 3, 1)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The projection matrix P with shape <span class="math notranslate nohighlight">\((B, 4, 4)\)</span>.</p>
 </dd>
 </dl>
@@ -783,13 +783,13 @@ avoid ambiguity with torch.nn.functional.</p></li>
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.epipolar.</span></span><span class="sig-name descname"><span class="pre">projections_from_fundamental</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">F_mat</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/epipolar/projection.html#projections_from_fundamental"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.epipolar.projections_from_fundamental" title="Permalink to this definition">#</a></dt>
 <dd><p>Get the projection matrices from the Fundamental Matrix.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>F_mat</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the fundamental matrix with the shape <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The projection matrices with shape <span class="math notranslate nohighlight">\((B, 3, 4, 2)\)</span>.</p>
 </dd>
 </dl>
@@ -801,17 +801,17 @@ avoid ambiguity with torch.nn.functional.</p></li>
 <dd><p>Return a 3x3 instrinsics matrix, with same size as the input.</p>
 <p>The center of projection will be based in the input image size.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>focal</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>) – the focal length for the camera matrix.</p></li>
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – image tensor that will determine the batch size and image height
 and width. It is assumed to be a tensor in the shape of <span class="math notranslate nohighlight">\((B, C, H, W)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The camera matrix with the shape of <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p>
 </dd>
 </dl>
@@ -823,17 +823,17 @@ and width. It is assumed to be a tensor in the shape of <span class="math notran
 <dd><p>Scale a camera matrix containing the intrinsics.</p>
 <p>Applies the scaling factor to the focal length and center of projection.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>camera_matrix</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the camera calibration matrix containing the intrinsic
 parameters. The expected shape for the tensor is <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
 <li><p><strong>scale_factor</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]) – the scaling factor to be applied.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The scaled camera matrix with shame shape as input <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p>
 </dd>
 </dl>
@@ -844,16 +844,16 @@ parameters. The expected shape for the tensor is <span class="math notranslate n
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.epipolar.</span></span><span class="sig-name descname"><span class="pre">random_intrinsics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">low</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/epipolar/projection.html#random_intrinsics"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.epipolar.random_intrinsics" title="Permalink to this definition">#</a></dt>
 <dd><p>Generate a random camera matrix based on a given uniform distribution.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>low</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]) – lower range (inclusive).</p></li>
 <li><p><strong>high</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]) – upper range (exclusive).</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the random camera matrix with the shape of <span class="math notranslate nohighlight">\((1, 3, 3)\)</span>.</p>
 </dd>
 </dl>
@@ -867,13 +867,13 @@ parameters. The expected shape for the tensor is <span class="math notranslate n
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.epipolar.</span></span><span class="sig-name descname"><span class="pre">cross_product_matrix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/epipolar/numeric.html#cross_product_matrix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.epipolar.cross_product_matrix" title="Permalink to this definition">#</a></dt>
 <dd><p>Return the cross_product_matrix symmetric matrix of a vector.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>x</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The input vector to construct the matrix in the shape <span class="math notranslate nohighlight">\((*, 3)\)</span>.</p>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The constructed cross_product_matrix symmetric matrix with shape <span class="math notranslate nohighlight">\((*, 3, 3)\)</span>.</p>
 </dd>
 </dl>
@@ -891,7 +891,7 @@ Reference: Internally it uses DLT method from Hartley/Zisserman 12.2 pag.312</p>
 <p>The input points are assumed to be in homogeneous coordinate system and being inliers
 correspondences. The method does not perform any robust estimation.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>P1</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The projection matrix for the first camera with shape <span class="math notranslate nohighlight">\((*, 3, 4)\)</span>.</p></li>
 <li><p><strong>P2</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The projection matrix for the second camera with shape <span class="math notranslate nohighlight">\((*, 3, 4)\)</span>.</p></li>
@@ -901,10 +901,10 @@ coordinates with shape <span class="math notranslate nohighlight">\((*, N, 2)\)<
 coordinates with shape <span class="math notranslate nohighlight">\((*, N, 2)\)</span>.</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>The reconstructed 3d points in the world frame with shape <span class="math notranslate nohighlight">\((*, N, 3)\)</span>.</p>
 </dd>
 </dl>

@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.geometry.transform" href="geometry.transform.html" /><link rel="prev" title="kornia.geometry.quaternion" href="geometry.quaternion.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/geometry.subpix.html" />
 
@@ -326,7 +326,7 @@
 </div>
 <p>where <span class="math notranslate nohighlight">\(T\)</span> is temperature.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the given heatmap with shape <span class="math notranslate nohighlight">\((N, C, H_{in}, W_{in})\)</span>.</p></li>
 <li><p><strong>kernel_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <em>optional</em>) – the size of the window.
@@ -346,10 +346,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">1e-0
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><p>Function has two outputs - argmax coordinates and the softmaxpooled heatmap values themselves.
 On each window, the function computed returns with shapes <span class="math notranslate nohighlight">\((N, C, 2, H_{out},
 W_{out})\)</span>, <span class="math notranslate nohighlight">\((N, C, H_{out}, W_{out})\)</span>,</p>
@@ -390,7 +390,7 @@ W_{out})\)</span>, <span class="math notranslate nohighlight">\((N, C, H_{out}, 
 </div>
 <p>where <code class="docutils literal notranslate"><span class="pre">T</span></code> is temperature.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the given heatmap with shape <span class="math notranslate nohighlight">\((N, C, D_{in}, H_{in}, W_{in})\)</span>.</p></li>
 <li><p><strong>kernel_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>], <em>optional</em>) – size of the window.
@@ -413,10 +413,10 @@ This is needed for mimic behavior of strict NMS in classic local features
 Default:  <code class="code docutils literal notranslate"><span class="pre">0.0</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Union" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><p>Function has two outputs - argmax coordinates and the softmaxpooled heatmap values themselves.
 On each window, the function computed returns with shapes <span class="math notranslate nohighlight">\((N, C, 3, D_{out}, H_{out}, W_{out})\)</span>,
 <span class="math notranslate nohighlight">\((N, C, D_{out}, H_{out}, W_{out})\)</span>,</p>
@@ -453,7 +453,7 @@ On each window, the function computed returns with shapes <span class="math notr
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.subpix.</span></span><span class="sig-name descname"><span class="pre">conv_quad_interp3d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strict_maxima_bonus</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1e-07</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/subpix/spatial_soft_argmax.html#conv_quad_interp3d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.subpix.conv_quad_interp3d" title="Permalink to this definition">#</a></dt>
 <dd><p>Compute the single iteration of quadratic interpolation of the extremum (max or min).</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the given heatmap with shape <span class="math notranslate nohighlight">\((N, C, D_{in}, H_{in}, W_{in})\)</span>.</p></li>
 <li><p><strong>strict_maxima_bonus</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a>, <em>optional</em>) – pixels, which are strict maxima will score (1 + strict_maxima_bonus) * value.
@@ -463,10 +463,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">10.0
 Default:  <code class="code docutils literal notranslate"><span class="pre">1e-07</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>]</p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><p>the location and value per each 3x3x3 window which contains strict extremum, similar to one done is SIFT.
 <span class="math notranslate nohighlight">\((N, C, 3, D_{out}, H_{out}, W_{out})\)</span>, <span class="math notranslate nohighlight">\((N, C, D_{out}, H_{out}, W_{out})\)</span>,</p>
 <p>where</p>
@@ -507,17 +507,17 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">1e-0
 <p>Note that this function behaves differently to <a class="reference external" href="https://pytorch.org/docs/stable/generated/torch.nn.Softmax2d.html#torch.nn.Softmax2d" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.Softmax2d</span></code></a>, which
 instead applies Softmax over features at each spatial location.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the input tensor with shape <span class="math notranslate nohighlight">\((B, N, H, W)\)</span>.</p></li>
 <li><p><strong>temperature</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <em>optional</em>) – factor to apply to input, adjusting the “smoothness” of the output distribution.
 Default:  <code class="code docutils literal notranslate"><span class="pre">torch.tensor(1.0)</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a 2D probability distribution per image channel with shape <span class="math notranslate nohighlight">\((B, N, H, W)\)</span>.</p>
 </dd>
 </dl>
@@ -541,7 +541,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">torc
 <p>The input heatmap is assumed to represent a valid spatial probability distribution,
 which can be achieved using <code class="xref py py-func docutils literal notranslate"><span class="pre">spatial_softmax2d()</span></code>.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the input tensor representing dense spatial probabilities with shape <span class="math notranslate nohighlight">\((B, N, H, W)\)</span>.</p></li>
 <li><p><strong>normalized_coordinates</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – whether to return the coordinates normalized in the range
@@ -549,10 +549,10 @@ of <span class="math notranslate nohighlight">\([-1, 1]\)</span>. Otherwise, it 
 Default:  <code class="code docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>expected value of the 2D coordinates with shape <span class="math notranslate nohighlight">\((B, N, 2)\)</span>. Output order of the coordinates is (x, y).</p>
 </dd>
 </dl>
@@ -572,7 +572,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.subpix.</span></span><span class="sig-name descname"><span class="pre">spatial_soft_argmax2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temperature</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">tensor(1.0)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalized_coordinates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/subpix/spatial_soft_argmax.html#spatial_soft_argmax2d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.subpix.spatial_soft_argmax2d" title="Permalink to this definition">#</a></dt>
 <dd><p>Compute the Spatial Soft-Argmax 2D of a given input heatmap.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>input</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the given heatmap with shape <span class="math notranslate nohighlight">\((B, N, H, W)\)</span>.</p></li>
 <li><p><strong>temperature</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <em>optional</em>) – factor to apply to input.
@@ -582,10 +582,10 @@ Otherwise, it will return the coordinates in the range of the input shape.
 Default:  <code class="code docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the index of the maximum 2d coordinates of the give map <span class="math notranslate nohighlight">\((B, N, 2)\)</span>.
 The output order is x-coord and y-coord.</p>
 </dd>
@@ -606,7 +606,7 @@ The output order is x-coord and y-coord.</p>
 <span class="sig-prename descclassname"><span class="pre">kornia.geometry.subpix.</span></span><span class="sig-name descname"><span class="pre">render_gaussian2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mean</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">std</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">normalized_coordinates</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/geometry/subpix/dsnt.html#render_gaussian2d"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.geometry.subpix.render_gaussian2d" title="Permalink to this definition">#</a></dt>
 <dd><p>Render the PDF of a 2D Gaussian distribution.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>mean</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the mean location of the Gaussian to render, <span class="math notranslate nohighlight">\((\mu_x, \mu_y)\)</span>. Shape: <span class="math notranslate nohighlight">\((*, 2)\)</span>.</p></li>
 <li><p><strong>std</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – the standard deviation of the Gaussian to render, <span class="math notranslate nohighlight">\((\sigma_x, \sigma_y)\)</span>.
@@ -617,10 +617,10 @@ in the range of <span class="math notranslate nohighlight">\([-1, 1]\)</span>. O
 Default:  <code class="code docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>tensor including rendered points with shape <span class="math notranslate nohighlight">\((*, H, W)\)</span>.</p>
 </dd>
 </dl>
@@ -635,7 +635,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dd><p>Apply non maxima suppression to filter.</p>
 <p>See <a class="reference internal" href="#kornia.geometry.subpix.NonMaximaSuppression2d" title="kornia.geometry.subpix.NonMaximaSuppression2d"><code class="xref py py-class docutils literal notranslate"><span class="pre">NonMaximaSuppression2d</span></code></a> for details.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 </dl>
@@ -647,7 +647,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dd><p>Apply non maxima suppression to filter.</p>
 <p>See <code class="xref py py-class docutils literal notranslate"><span class="pre">NonMaximaSuppression3d</span></code> for details.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 </dl>

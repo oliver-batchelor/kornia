@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="kornia.testing" href="testing.html" /><link rel="prev" title="kornia.morphology" href="morphology.html" />
         <link rel="canonical" href="https://kornia.readthedocs.io/tracking.html" />
 
@@ -315,7 +315,7 @@
 <dd><p>Module, which performs local-feature-based tracking of the target planar object in the sequence of the
 frames.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>initial_matcher</strong> (<a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference internal" href="feature.html#kornia.feature.LocalFeature" title="kornia.feature.integrated.LocalFeature"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocalFeature</span></code></a>], <em>optional</em>) – image matching module, e.g. <a class="reference internal" href="feature.html#kornia.feature.LocalFeatureMatcher" title="kornia.feature.LocalFeatureMatcher"><code class="xref py py-class docutils literal notranslate"><span class="pre">LocalFeatureMatcher</span></code></a>
 or <a class="reference internal" href="feature.html#kornia.feature.LoFTR" title="kornia.feature.LoFTR"><code class="xref py py-class docutils literal notranslate"><span class="pre">LoFTR</span></code></a>. Default: <a class="reference internal" href="feature.html#kornia.feature.GFTTAffNetHardNet" title="kornia.feature.GFTTAffNetHardNet"><code class="xref py py-class docutils literal notranslate"><span class="pre">GFTTAffNetHardNet</span></code></a>.</p></li>
@@ -347,7 +347,7 @@ registered hooks while the latter silently ignores them.</p>
 <span class="sig-name descname"><span class="pre">match_initial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/kornia/tracking/planar_tracker.html#HomographyTracker.match_initial"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kornia.tracking.HomographyTracker.match_initial" title="Permalink to this definition">#</a></dt>
 <dd><p>The frame <cite>x</cite> is matched with initial_matcher and  verified with ransac.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>]</p>
 </dd>
 </dl>
@@ -359,7 +359,7 @@ registered hooks while the latter silently ignores them.</p>
 <dd><p>The frame <cite>x</cite> is prewarped according to the previous frame homography, matched with fast_matcher
 verified with ransac.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Tuple" title="(in Python v3.11)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Tuple</span></code></a>[<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>, <a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>]</p>
 </dd>
 </dl>

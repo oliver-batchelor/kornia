@@ -342,20 +342,20 @@ a box is defined as <code class="docutils literal notranslate"><span class="pre"
 <dd><p>Returns <span class="math notranslate nohighlight">\((B, N)\)</span>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="kornia.geometry.boxes.Boxes.device">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.device" title="(in PyTorch v2.0)"><span class="pre">device</span></a></em><a class="headerlink" href="#kornia.geometry.boxes.Boxes.device" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.device" title="(in PyTorch v2.1)"><span class="pre">device</span></a></em><a class="headerlink" href="#kornia.geometry.boxes.Boxes.device" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns boxes device.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="kornia.geometry.boxes.Boxes.dtype">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dtype</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.dtype" title="(in PyTorch v2.0)"><span class="pre">dtype</span></a></em><a class="headerlink" href="#kornia.geometry.boxes.Boxes.dtype" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dtype</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.dtype" title="(in PyTorch v2.1)"><span class="pre">dtype</span></a></em><a class="headerlink" href="#kornia.geometry.boxes.Boxes.dtype" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns boxes dtype.</p>
 </dd></dl>
 
@@ -444,7 +444,7 @@ the merge results in <span class="math notranslate nohighlight">\((B, N + M, 4, 
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>boxes</strong> (<a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a>) – 2D boxes.</p></li>
-<li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
+<li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
@@ -460,7 +460,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <dd><p>Pad a bounding box.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>padding_size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (B, 4)</p>
+<dd class="field-odd"><p><strong>padding_size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (B, 4)</p>
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a></p>
@@ -486,12 +486,12 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>height</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – height of the masked image/images.</p></li>
-<li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – width of the masked image/images.</p></li>
+<li><p><strong>height</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – height of the masked image/images.</p></li>
+<li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – width of the masked image/images.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
+<dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>the output mask tensor, shape of <span class="math notranslate nohighlight">\((N, width, height)\)</span> or <span class="math notranslate nohighlight">\((B,N, width, height)\)</span> and dtype of
@@ -527,7 +527,7 @@ boxes in the tensor.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> | </em><em>None</em><em>, </em><em>optional</em>) – <p>the output box format. It could be:
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><em>str</em></a><em> | </em><em>None</em><em>, </em><em>optional</em>) – <p>the output box format. It could be:
 Default:  <code class="code docutils literal notranslate"><span class="pre">None</span></code></p>
 <ul>
 <li><p>’xyxy’: boxes are defined as <code class="docutils literal notranslate"><span class="pre">xmin,</span> <span class="pre">ymin,</span> <span class="pre">xmax,</span> <span class="pre">ymax</span></code> where <code class="docutils literal notranslate"><span class="pre">width</span> <span class="pre">=</span> <span class="pre">xmax</span> <span class="pre">-</span> <span class="pre">xmin</span></code> and
@@ -543,7 +543,7 @@ box width and height are defined as <code class="docutils literal notranslate"><
 <code class="docutils literal notranslate"><span class="pre">width</span> <span class="pre">=</span> <span class="pre">xmax</span> <span class="pre">-</span> <span class="pre">xmin</span> <span class="pre">+</span> <span class="pre">1</span></code> and <code class="docutils literal notranslate"><span class="pre">height</span> <span class="pre">=</span> <span class="pre">ymax</span> <span class="pre">-</span> <span class="pre">ymin</span> <span class="pre">+</span> <span class="pre">1</span></code>. ymin + 1``.</p></li>
 </ul>
 </p></li>
-<li><p><strong>as_padded_sequence</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to keep the pads for a list of boxes. This parameter is only valid
+<li><p><strong>as_padded_sequence</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to keep the pads for a list of boxes. This parameter is only valid
 if the boxes are from a box list whilst <cite>from_tensor</cite>.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
@@ -574,8 +574,8 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>M</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The transformation matrix to be applied, shape of <span class="math notranslate nohighlight">\((3, 3)\)</span> or <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
-<li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
+<li><p><strong>M</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The transformation matrix to be applied, shape of <span class="math notranslate nohighlight">\((3, 3)\)</span> or <span class="math notranslate nohighlight">\((B, 3, 3)\)</span>.</p></li>
+<li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
@@ -606,10 +606,10 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">Fals
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – translate size for x, y direction, shape of <span class="math notranslate nohighlight">\((B, 2)\)</span>.</p></li>
-<li><p><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – “warp” or “fast”.
+<li><p><strong>size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – translate size for x, y direction, shape of <span class="math notranslate nohighlight">\((B, 2)\)</span>.</p></li>
+<li><p><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – “warp” or “fast”.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'warp'</span></code></p></li>
-<li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
+<li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
@@ -790,7 +790,7 @@ shape <span class="math notranslate nohighlight">\((4, 3, Box)\)</span>:</p>
 <dd><p>Pad a bounding box.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>padding_size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (B, 4)</p>
+<dd class="field-odd"><p><strong>padding_size</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – (B, 4)</p>
 </dd>
 <dt class="field-even">Return type</dt>
 <dd class="field-even"><p><a class="reference internal" href="#kornia.geometry.boxes.Boxes" title="kornia.geometry.boxes.Boxes"><code class="xref py py-class docutils literal notranslate"><span class="pre">Boxes</span></code></a></p>
@@ -807,8 +807,8 @@ shape <span class="math notranslate nohighlight">\((4, 3, Box)\)</span>:</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>boxes</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – 3D boxes, shape of <span class="math notranslate nohighlight">\((N,8,3)\)</span> or <span class="math notranslate nohighlight">\((B,N,8,3)\)</span>. See below for more details.</p></li>
-<li><p><strong>raise_if_not_floating_point</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – flag to control floating point casting behaviour when <cite>boxes</cite> is not a floating
+<li><p><strong>boxes</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – 3D boxes, shape of <span class="math notranslate nohighlight">\((N,8,3)\)</span> or <span class="math notranslate nohighlight">\((B,N,8,3)\)</span>. See below for more details.</p></li>
+<li><p><strong>raise_if_not_floating_point</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – flag to control floating point casting behaviour when <cite>boxes</cite> is not a floating
 point tensor. True to raise an error when <cite>boxes</cite> isn’t a floating point tensor, False to cast to float.
 Default:  <code class="code docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
@@ -824,13 +824,13 @@ Coordinates must be in <code class="docutils literal notranslate"><span class="p
 </div>
 <dl class="py property">
 <dt class="sig sig-object py" id="kornia.geometry.boxes.Boxes3D.device">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.device" title="(in PyTorch v2.0)"><span class="pre">device</span></a></em><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D.device" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">device</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.device" title="(in PyTorch v2.1)"><span class="pre">device</span></a></em><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D.device" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns boxes device.</p>
 </dd></dl>
 
 <dl class="py property">
 <dt class="sig sig-object py" id="kornia.geometry.boxes.Boxes3D.dtype">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dtype</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.dtype" title="(in PyTorch v2.0)"><span class="pre">dtype</span></a></em><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D.dtype" title="Permalink to this definition">#</a></dt>
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">dtype</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://pytorch.org/docs/stable/tensor_attributes.html#torch.dtype" title="(in PyTorch v2.1)"><span class="pre">dtype</span></a></em><a class="headerlink" href="#kornia.geometry.boxes.Boxes3D.dtype" title="Permalink to this definition">#</a></dt>
 <dd><p>Returns boxes dtype.</p>
 </dd></dl>
 
@@ -841,8 +841,8 @@ Coordinates must be in <code class="docutils literal notranslate"><span class="p
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>boxes</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – 3D boxes, shape of <span class="math notranslate nohighlight">\((N,6)\)</span> or <span class="math notranslate nohighlight">\((B,N,6)\)</span>.</p></li>
-<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – <p>The format in which the 3D boxes are provided.
+<li><p><strong>boxes</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – 3D boxes, shape of <span class="math notranslate nohighlight">\((N,6)\)</span> or <span class="math notranslate nohighlight">\((B,N,6)\)</span>.</p></li>
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – <p>The format in which the 3D boxes are provided.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'xyzxyz'</span></code></p>
 <ul>
 <li><p>’xyzxyz’: boxes are assumed to be in the format <code class="docutils literal notranslate"><span class="pre">xmin,</span> <span class="pre">ymin,</span> <span class="pre">zmin,</span> <span class="pre">xmax,</span> <span class="pre">ymax,</span> <span class="pre">zmax</span></code> where
@@ -853,7 +853,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">'xyz
 <code class="docutils literal notranslate"><span class="pre">width</span> <span class="pre">=</span> <span class="pre">xmax</span> <span class="pre">-</span> <span class="pre">xmin</span></code>, <code class="docutils literal notranslate"><span class="pre">height</span> <span class="pre">=</span> <span class="pre">ymax</span> <span class="pre">-</span> <span class="pre">ymin</span></code> and <code class="docutils literal notranslate"><span class="pre">depth</span> <span class="pre">=</span> <span class="pre">zmax</span> <span class="pre">-</span> <span class="pre">zmin</span></code>.</p></li>
 </ul>
 </p></li>
-<li><p><strong>validate_boxes</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – check if boxes are valid rectangles or not. Valid rectangles are those with width, height
+<li><p><strong>validate_boxes</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – check if boxes are valid rectangles or not. Valid rectangles are those with width, height
 and depth &gt;= 1 (&gt;= 2 when mode ends with ‘_plus’ suffix).
 Default:  <code class="code docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
@@ -931,13 +931,13 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>depth</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – depth of the masked image/images.</p></li>
-<li><p><strong>height</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – height of the masked image/images.</p></li>
-<li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – width of the masked image/images.</p></li>
+<li><p><strong>depth</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – depth of the masked image/images.</p></li>
+<li><p><strong>height</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – height of the masked image/images.</p></li>
+<li><p><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>) – width of the masked image/images.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Return type</dt>
-<dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
+<dd class="field-even"><p><a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a></p>
 </dd>
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p><dl class="simple">
@@ -997,7 +997,7 @@ Default:  <code class="code docutils literal notranslate"><span class="pre">True
 boxes in the tensor.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – <p>The format in which the boxes are provided.
+<dd class="field-odd"><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <em>optional</em>) – <p>The format in which the boxes are provided.
 Default:  <code class="code docutils literal notranslate"><span class="pre">'xyzxyz'</span></code></p>
 <ul class="simple">
 <li><p>’xyzxyz’: boxes are assumed to be in the format <code class="docutils literal notranslate"><span class="pre">xmin,</span> <span class="pre">ymin,</span> <span class="pre">zmin,</span> <span class="pre">xmax,</span> <span class="pre">ymax,</span> <span class="pre">zmax</span></code> where
@@ -1050,8 +1050,8 @@ and <code class="docutils literal notranslate"><span class="pre">depth</span> <s
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>M</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The transformation matrix to be applied, shape of <span class="math notranslate nohighlight">\((4, 4)\)</span> or <span class="math notranslate nohighlight">\((B, 4, 4)\)</span>.</p></li>
-<li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
+<li><p><strong>M</strong> (<a class="reference external" href="https://pytorch.org/docs/stable/tensors.html#torch.Tensor" title="(in PyTorch v2.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Tensor</span></code></a>) – The transformation matrix to be applied, shape of <span class="math notranslate nohighlight">\((4, 4)\)</span> or <span class="math notranslate nohighlight">\((B, 4, 4)\)</span>.</p></li>
+<li><p><strong>inplace</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.12)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, <em>optional</em>) – do transform in-place and return self.
 Default:  <code class="code docutils literal notranslate"><span class="pre">False</span></code></p></li>
 </ul>
 </dd>
